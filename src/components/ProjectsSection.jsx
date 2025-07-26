@@ -1,22 +1,34 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import foodOrderingImg from "../assets/foodOrdering.png";
+import projectManagementImg from "../assets/projectmanagement.png";
+import ecommerceImg from "../assets/Ecommerce.png";
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Online Food Ordering System",
+    description:
+      "A production-ready food ordering application with Spring Boot backend and React.js frontend. Features include JWT authentication, role-based access, cart management, payment gateway integration, and automated billing. Data is stored using MySQL and deployed on AWS.",
+    image: foodOrderingImg,
+    tags: [
+      "Spring Boot",
+      "Hibernate",
+      "MySQL",
+      "AWS",
+      "React.js",
+      "JWT",
+      "Razorpay",
+    ],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Project Management",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "A full-stack project management system with user roles, task tracking, and deadline reminders.",
+    image: projectManagementImg,
+    tags: ["Java", "Spring Boot", "MySQL", "React.js", "JWT", "REST API"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -24,9 +36,17 @@ const projects = [
     id: 3,
     title: "E-commerce Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "A full-stack online food ordering system with JWT authentication, role-based access, and Razorpay payment integration.",
+    image: ecommerceImg,
+    tags: [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "React.js",
+      "JWT",
+      "Razorpay",
+      "REST API",
+    ],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -100,7 +120,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/gautamgavkar01"
           >
             Check My Github <ArrowRight size={16} />
           </a>
